@@ -1,10 +1,8 @@
 package seleniumgluecode;
 
+import cucumber.api.java.Before;
+import cucumber.api.java.After;
 import drivers.Browser.Chrome;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
-import io.cucumber.java.BeforeStep;
-import io.cucumber.java.AfterStep;
 
 public class BeforeAfterSteps {
 

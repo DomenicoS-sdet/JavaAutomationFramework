@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Browser {
-
 	
 	public static class Chrome {
 		
@@ -30,12 +29,6 @@ public class Browser {
 		public static void dispose() {
 			driver.close();
 		}
-
-		public static String takeScreenshot() {
-			// TODO Auto-generated method stub
-			return null;
-		}
-		
 	}
 
 }
