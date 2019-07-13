@@ -12,4 +12,4 @@
 4. Select Run As > JUnit Test
 
 ## Report
-HTML report is stored inside the folder SeleniumCucumber\target\cucumber-reports
+HTML report is stored inside the folder C:/Temp/JavaTestResults
