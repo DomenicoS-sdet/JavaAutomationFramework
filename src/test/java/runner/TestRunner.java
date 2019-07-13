@@ -12,7 +12,7 @@ import drivers.Browser.Chrome;
 @CucumberOptions(
 features = "src/test/java/features"
 ,glue= {"seleniumgluecode"},
-plugin = { "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"}, 
+plugin = { "com.cucumber.listener.ExtentCucumberFormatter:C:/Temp/JavaTestResults/report.html"}, 
 monochrome = true
 )
 
