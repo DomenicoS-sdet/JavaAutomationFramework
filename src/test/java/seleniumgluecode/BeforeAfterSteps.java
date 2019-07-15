@@ -1,21 +1,19 @@
 package seleniumgluecode;
 
 import cucumber.api.java.Before;
-
 import cucumber.api.java.After;
-import drivers.BrowserCollection.Browser;
+import drivers.Browser.Chrome;
 
 public class BeforeAfterSteps {
-	
 
     @Before
     public static void setUp(){   	
-    	Browser.getBrowser().start();
+    	Chrome.start();
     }
 
     @After
     public void cleanUp(){
-        Browser.getBrowser().cleanUp();
-        Browser.getBrowser().dispose();
+        Chrome.cleanUp();
+        Chrome.dispose();
     }
 }

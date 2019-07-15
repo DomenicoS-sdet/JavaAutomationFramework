@@ -3,7 +3,7 @@ package PageObjects;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 
-import drivers.BrowserCollection.Chrome;
+import drivers.Browser.Chrome;
 
 public class SearchResultPO extends PageObject{
 	
