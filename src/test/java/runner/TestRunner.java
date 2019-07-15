@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
 import cucumber.api.java.After;
 import cucumber.api.junit.Cucumber;
-import drivers.Browser.Chrome;
+import drivers.BrowserCollection.Chrome;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
