@@ -17,13 +17,13 @@ public class HomePagePO extends PageObject {
 	@FindBy(xpath = "//input[@placeholder=\"Check out\" and @name='checkout']")
 	private WebElement checkOut;
 
-	@FindBy(id = "travellersInput")
+	@FindBy(id = "htravellersInput")
 	private WebElement travellersInput;
 
-	@FindBy(id = "adultInput")
+	@FindBy(id = "hadultInput")
 	private WebElement adultInput;
 
-	@FindBy(id = "childInput")
+	@FindBy(id = "hchildInput")
 	private WebElement childInput;
 
 	public HomePagePO(WebDriver driver) {
@@ -47,18 +47,18 @@ public class HomePagePO extends PageObject {
 		while (!adultInput.getAttribute("value").equals(adults)) {
 
 			if (Integer.parseInt(adultInput.getAttribute("value")) < Integer.parseInt(adults)) {
-				driver.findElement(By.id("adultPlusBtn")).click();
+				driver.findElement(By.id("hadultPlusBtn")).click();
 			} else {
-				driver.findElement(By.id("adultMinusBtn")).click();
+				driver.findElement(By.id("hadultMinusBtn")).click();
 			}
 		}
 
 		while (!childInput.getAttribute("value").equals(childs)) {
 
 			if (Integer.parseInt(childInput.getAttribute("value")) < Integer.parseInt(childs)) {
-				driver.findElement(By.id("childPlusBtn")).click();
+				driver.findElement(By.id("hchildPlusBtn")).click();
 			} else {
-				driver.findElement(By.id("childMinusBtn")).click();
+				driver.findElement(By.id("hchildMinusBtn")).click();
 			}
 		}
 		
